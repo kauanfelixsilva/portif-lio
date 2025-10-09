@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgba(211, 211, 211, 0.623);
+    max-width: 100%;
+}
+p{
+  text-align: justify;
+}
+.container {
+  display: flex;
+  align-items: center;   
+  justify-content: center;
+  gap: 50px; 
+  max-width: 1100px;
+  margin: auto;
+}
+.foto img{
+  width: 200px;   /* ou qualquer largura que você queira */
+  height: 200px;  /* deixa igual à largura pra ficar quadrada */
+  border-radius: 50%;  /* transforma em círculo */
+  object-fit: cover;   /* mantém a proporção e corta o excesso */
+}
+.texto {
+  max-width: 500px;
+}
+
+.texto h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.texto p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+hr{
+  padding: 10px;
+  
+}
+.links{
+    display: flex;
+    justify-content: space-between; 
+    max-width: 400px; 
+    margin: 40px auto;
+}
+.linkandroid{
+  text-decoration: none;
+  color: rgb(39, 187, 138);
+}
+.linkcordel{
+  text-decoration: none;
+  color: black;
+  
+}
+.imgandroid{
+  max-width: 100%;
+}
+.imgcordel{
+  max-width: 100%;
+}
+
+footer{
+  font-size: 20px;
+  background-color: rgba(207, 183, 154, 0.308);
+  text-align: center;
+  padding: 15px 5px;
+}
