@@ -1,62 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-</head>
-<body>
-    <main>
-            <section class="sobre-mim">
-  <div class="container">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfólio | Kauan Felix</title>
 
-    <div class="texto">
-      <h2>Sobre mim</h2>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+  <nav class="nav">
+    <a href="#sobre">Sobre</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#certificados">Certificados</a>
+    <a href="#contatos">Contato</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="sobre" class="sobre">
+  <div class="sobre-container">
+
+    <img src="imagens/foto.jpeg" alt="Foto Kauan">
+
+    <div class="sobre-texto">
+      <h1>Olá, eu sou <span>Kauan Felix</span></h1>
+      <h3>Desenvolvedor Full Stack</h3>
+
       <p>
-        Meu nome é Kauan Felix da Silva, tenho 18 anos e moro no Itaim Paulista.
-        Atualmente sou estagiário de TI no colégio marista arquidiocesano.
-        Faço faculdade de Ads na faculdade Cruzeiro do Sul e atualmente eu estudo Python no tempo livre.
+        Sou um futuro desenvolvedor Full Stack em início de carreira, com foco no desenvolvimento de sites e aplicações web. Trabalho com HTML, CSS, JavaScript, PHP e Python, buscando criar soluções funcionais e bem estruturadas. Meu objetivo é crescer como desenvolvedor Full Stack e atuar em uma empresa de tecnologia.
       </p>
+
+      <a href="CurriculoKauan.pdf" class="btn">Baixar Currículo</a>
     </div>
+
   </div>
 </section>
-            <div class="links">
-                <a href="https://www.instagram.com/kauanzin777__/">Instagram</a>
-                <a href="https://www.linkedin.com/in/kauan-felix-da-silva-8a4546295/">Linkedin</a>
-                <a href="https://github.com/kauanfelixsilva">Github</a>
-            </div>
-        </p>
 
-        <h2>Projetos</h2>
+<section id="projetos" class="projetos">
+  <h2>Projetos</h2>
 
-        <p>Meu primeiro projeto voltado a uma pagina web sobre a historia do mascote da android. Um projeto desenvolvido com o Gustavo Guanabara do Curso em video.</p>
-        <a href="https://kauanfelixsilva.github.io/projeto-android/#" class="linkandroid">Projeto Android</a>
-        <br>
-        <img src="imagens/pjandroid.png" alt="Projeto Android" width="1000px" height="600px" class="imgandroid">
-        <hr>
-        <p>Meu segundo projeto voltado a uma pagina web sobre um poema do autor Milton Duarte. Um projeto desenvolvido com o Gustavo Guanabara do Curso em video.</p>
-        <a href="https://kauanfelixsilva.github.io/projeto-cordel/" class="linkcordel">Projeto Cordel</a>
-        <br>
-        <img src="imagens/pjcordel.png" alt="Projeto Cordel" width="1000px" height="600px" class="imgcordel">
-        <hr>
-        <h2>Habilidades Técnicas</h2>
-  <ul>
-    <li>HTML (estruturação de páginas)</li>
-    <li>CSS (estilização e design responsivo)</li>
-    <li>Python (básico – lógica, variáveis, modulos,condições e loops)</li>
-  </ul>
+  <div class="projetos-grid">
 
-  <h2>Habilidades Pessoais</h2>
-  <ul>
-    <li>Comunicação</li>
-    <li>Organização e disciplina</li>
-    <li>Criatividade para design e conteúdo</li>
-  </ul>
+    <div class="card">
+      <img src="imagens/pjandroid.png">
+      <h3>Projeto Android</h3>
+      <p>Site contando a história do mascote Android.</p>
+      <a href="https://kauanfelixsilva.github.io/projeto-android/" target="_blank">Ver projeto</a>
+    </div>
+
+    <div class="card">
+      <img src="imagens/pjcordel.png">
+      <h3>Projeto Cordel</h3>
+      <p>Site baseado em poema de Milton Duarte.</p>
+      <a href="https://kauanfelixsilva.github.io/projeto-cordel/" target="_blank">Ver projeto</a>
+    </div>
+
+  </div>
 </section>
-    </main>
-    <br>
-    <footer>Criado por Kauan Felix da Silva</footer>
+
+<section id="habilidades" class="habilidades">
+<h2>Habilidades</h2>
+
+<ul class="lista">
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+  <li>PHP</li>
+  <li>Python</li>
+</ul>
+
+</section>
+
+<section id="certificados" class="certificados">
+
+  <h2>Certificados</h2>
+
+  <div class="bloco-certificados">
+
+    <div class="categoria">
+      <h3>Front-end</h3>
+      <ul>
+        <li>Curso HTML5 e CSS3 – Módulo 1 [40h]</li>
+        <li>Curso HTML5 e CSS3 – Módulo 2 [40h]</li>
+        <li>Curso HTML5 e CSS3 – Módulo 3 [40h]</li>
+      </ul>
+    </div>
+
+    <div class="categoria">
+      <h3>Back-end</h3>
+      <ul>
+        <li>Python 3 – Mundo 1 [40h]</li>
+        <li>Python 3 – Mundo 2 [40h]</li>
+        <li>PHP Moderno – Módulo 1 [40h]</li>
+      </ul>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="contatos" class="contatos">
+<h2><strong>Contato</strong></h2>
+
+<div class="social">
+  <a href="https://github.com/kauanfelixsilva">GitHub</a>
+  <a href="https://linkedin.com">LinkedIn</a>
+</div>
+
+</section>
+
+</main>
+<script>
+  if (window.location.hash) {
+    history.replaceState(null, null, window.location.pathname);
+  }
+</script>
+
 </body>
 </html>
