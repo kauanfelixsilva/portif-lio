@@ -7,7 +7,7 @@
 
 body{
   background:#0f0f0f;
-  color:#fff;
+  color: white;
 }
 html{
   scroll-behavior: smooth;
@@ -41,10 +41,16 @@ html{
 }
 
 /* SOBRE */
+
 .sobre{
   min-height:100vh;
   display:flex;
   align-items:center;
+  background-image: url("imagens/pexels-filippo-bergamaschi-202684-986774.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 .sobre-container{
@@ -94,6 +100,11 @@ html{
 .projetos{
   padding:120px 40px;
   text-align:center;
+  background-image: url("imagens/pexels-danny-meneses-340146-943096.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 .projetos-grid{
@@ -110,15 +121,24 @@ html{
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-image: url("imagens/pexels-sora-shimazaki-5926397.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 .certificados{
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-image: url("imagens/pexels-tima-miroshnichenko-5380666.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 .card{
