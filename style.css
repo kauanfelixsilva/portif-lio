@@ -130,11 +130,6 @@ html{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("imagens/pexels-tima-miroshnichenko-5380666.jpg");
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
 }
 
 .card{
@@ -190,8 +185,6 @@ html{
   border-bottom: 1px solid #222;
 }
 
-
-/* CONTATO */
 .contatos{
   padding:120px 40px;
   text-align:center;
