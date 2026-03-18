@@ -48,6 +48,9 @@ html{
   background-position: top center;
   background-repeat: no-repeat;
   min-height: 100vh;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .sobre-container{
@@ -101,6 +104,9 @@ html{
   background-position: top center;
   background-repeat: no-repeat;
   min-height: 100vh;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .projetos-grid{
@@ -122,6 +128,9 @@ html{
   background-position: top center;
   background-repeat: no-repeat;
   min-height: 100vh;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .certificados{
