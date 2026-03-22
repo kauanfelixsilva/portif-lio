@@ -77,15 +77,7 @@ html{
 
 .sobre-texto h1{
   font-size:40px;
-}
-
-.sobre-texto span{
-  color:#ff7a00;
-}
-
-.sobre-texto h3{
-  margin:10px 0;
-  color:#ccc;
+  color: #ff7a00;
 }
 
 .btn{
