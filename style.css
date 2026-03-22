@@ -12,7 +12,12 @@ body{
 html{
   scroll-behavior: smooth;
 }
-
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 .header{
   position:fixed;
   width:100%;
@@ -64,6 +69,7 @@ html{
 
 .sobre img{
   width: 100%;
+  max-width: 270px;
   height: 270px;
   object-fit: cover;
   border-radius: 50%;
@@ -186,7 +192,7 @@ img{
   color: orange;
 }
 
-.categoria ul{
+ul{
   list-style: none;
 }
 
@@ -212,4 +218,24 @@ img{
   color:#ff7a00;
   text-decoration:none;
 }
-
+@media (max-width: 768px) {
+  .sobre-container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .sobre-texto h1 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 768px) {
+  .projetos {
+    padding: 80px 20px;
+  }
+}
