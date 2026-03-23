@@ -211,23 +211,8 @@ ul{
   text-decoration:none;
 }
 @media (max-width: 768px) {
-  .sobre-container {
-    flex-direction: column;
-  }
-}
-@media (max-width: 768px) {
-  .nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-@media (max-width: 768px) {
-  .sobre-texto h1 {
-    font-size: 26px;
-  }
-}
-@media (max-width: 768px) {
-  .projetos {
-    padding: 80px 20px;
-  }
+  .sobre-container { flex-direction: column; }
+  .nav { flex-wrap: wrap; justify-content: center; }
+  .sobre-texto h1 { font-size: 26px; }
+  .projetos { padding: 80px 20px; }
 }
