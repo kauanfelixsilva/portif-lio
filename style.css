@@ -131,12 +131,48 @@ html{
   height: auto;
 }
 
+.habilidades h2{
+  font-size: 34px;
+  color: #ff7a00;
+  margin-bottom: 40px;
+}
+
+.lista{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 30px;
+  background: rgba(15, 15, 15, 0.78);
+  border-radius: 16px;
+}
+
+.lista li{
+  padding: 12px 24px;
+  background: #1a1a1a;
+  border: 1px solid #ff7a00;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.lista li:hover{
+  background: #ff7a00;
+  color: #0f0f0f;
+  transform: translateY(-3px);
+}
+
 .certificados{
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 80px 10%;
 }
 
 .card{
@@ -157,10 +193,6 @@ img{
   color:#ff7a00;
 }
 
-.certificados{
-  padding: 80px 10%;
-}
-
 .bloco-certificados{
   display: flex;
   gap: 30px;
@@ -171,9 +203,6 @@ img{
 .categoria{
   flex: 1;
   min-width: 280px;
-}
-
-.categoria{
   background: #161616;
   padding: 20px;
   border-radius: 10px;
@@ -194,25 +223,67 @@ ul{
 }
 
 .contatos{
-  padding:120px 40px;
-  text-align:center;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 40px 60px;
+  text-align: center;
+  background: #0f0f0f;
+  border-top: 1px solid #222;
+}
+
+.contatos h2{
+  font-size: 34px;
+  color: #ff7a00;
+}
+
+.contato-frase{
+  margin: 16px auto 0;
+  max-width: 460px;
+  color: #bbb;
+  line-height: 1.6;
 }
 
 .social{
-  margin-top:30px;
-  display:flex;
-  justify-content:center;
-  gap:40px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .social a{
-  color:#ff7a00;
-  text-decoration:none;
+  display: inline-block;
+  padding: 12px 34px;
+  border: 2px solid #ff7a00;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
 }
+
+.social a:hover{
+  background: #ff7a00;
+  color: #0f0f0f;
+}
+
+.rodape{
+  padding: 28px 40px;
+  text-align: center;
+  background: #0f0f0f;
+  border-top: 1px solid #222;
+  color: #666;
+  font-size: 14px;
+}
+
 @media (max-width: 768px) {
   .sobre-container { flex-direction: column; }
   .nav { flex-wrap: wrap; justify-content: center; }
   .sobre-texto h1 { font-size: 26px; }
   .projetos { padding: 80px 20px; }
+  .lista { padding: 20px; gap: 12px; }
+  .lista li { padding: 10px 18px; }
+  .contatos { padding: 80px 20px; }
 }
