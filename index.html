@@ -1,6 +1,6 @@
-  <!DOCTYPE html>
-  <html lang="pt-br">
-  <head>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio | Kauan Felix</title>
@@ -9,138 +9,203 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  </head>
+  <script src="js/script.js" defer></script>
+</head>
 
-  <body>
+<body>
 
-  <header class="header">
-    <nav class="nav">
-      <a href="#sobre">Sobre</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#habilidades">Habilidades</a>
-      <a href="#certificados">Certificados</a>
-      <a href="#contatos">Contato</a>
-    </nav>
-  </header>
+<header class="header">
+  <nav class="nav">
+    <a href="#sobre">Sobre</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#experiencias">Experiências</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#certificados">Certificados</a>
+    <a href="#contatos">Contato</a>
+  </nav>
+</header>
 
-  <main>
+<main>
   <section id="sobre" class="sobre">
-      <div class="container sobre-container">
-        <img src="imagens/foto.jpeg" alt="Foto Kauan">
-        <div class="sobre-texto">
-          <h1>Desenvolvedor Full Stack</h1>
-          <p>
-            Sou um futuro desenvolvedor Full Stack em início de carreira, com foco no desenvolvimento de sites e aplicações web. Trabalho com HTML, CSS, JavaScript, PHP, Python e MySQL, buscando criar soluções funcionais e bem estruturadas. Meu objetivo é crescer como desenvolvedor Full Stack e atuar em uma empresa de tecnologia.
-          </p>
-          <a href="curriculo.pdf" class="btn">Baixar Currículo</a>
-        </div>
+    <div class="container sobre-container">
+      <img src="imagens/foto.jpeg" alt="Foto Kauan">
+      <div class="sobre-texto">
+        <h1>Desenvolvedor Full Stack</h1>
+        <p>
+          Desenvolvedor Full Stack, com foco no desenvolvimento de sites e aplicações web. Trabalho com HTML, CSS, JavaScript, PHP, Python e MySQL, criando soluções funcionais e bem estruturadas. Meu objetivo é crescer como desenvolvedor Full Stack e atuar em uma empresa de tecnologia.
+        </p>
+        <a href="curriculo.pdf" class="btn">Baixar Currículo</a>
       </div>
+    </div>
   </section>
 
   <section id="projetos" class="projetos">
     <div class="container">
-    <h2>Projetos</h2>
+      <h2>Meus Projetos</h2>
 
-    <div class="projetos-grid">
+      <div class="projetos-grid">
 
-      <div class="card">
-        <img src="imagens/pjandroid.png" alt="Captura do Projeto Android">
-        <h3>Projeto Android</h3>
-        <p>Site contando a história do mascote Android.</p>
-        <a href="https://kauanfelixsilva.github.io/projeto-android/" target="_blank">Ver projeto</a>
+        <article class="card">
+          <img src="imagens/Login.jpg" alt="Tela do Sistema Perfumaria">
+          <h3>Sistema Perfumaria</h3>
+          <p>Sistema comercial para uma pequena loja de perfumes, com controle financeiro e operacional. Calcula as margens de lucro com precisão, roda localmente com boa performance e se adapta a qualquer tamanho de tela.</p>
+          <span class="selo">Projeto privado</span>
+        </article>
+
+        <article class="card">
+          <img src="imagens/emprestimo.png" alt="Tela do Sistema de Agendamento de iPads">
+          <h3>Sistema de Agendamento de iPads</h3>
+          <p>Sistema para agendar iPads e salas de aula no dia a dia. Antes, o professor fazia o pedido, a equipe de tecnologia conferia a disponibilidade, agendava e respondia manualmente. Agora o próprio professor faz o agendamento em um só lugar.</p>
+          <span class="selo">Projeto privado</span>
+        </article>
+
+        <article class="card">
+          <img src="imagens/barbearia.png" alt="Tela do Site Barbearia">
+          <h3>Site Barbearia</h3>
+          <p>Sistema de agendamento para barbearia, feito em PHP puro e MySQL, sem frameworks. O cliente escolhe serviço, dia, profissional e horário livre; os profissionais gerenciam a agenda por um painel. Foco em arquitetura em camadas, regras de negócio documentadas, testes automatizados e proteção contra os ataques mais comuns da web.</p>
+          <span class="selo">Projeto privado</span>
+        </article>
+
+        <article class="card">
+          <img src="imagens/formulario.png" alt="Tela do Sistema de Cadastro e Login">
+          <h3>Sistema de Cadastro e Login</h3>
+          <p>Sistema de cadastro e login de usuários em PHP e MySQL, feito para praticar desenvolvimento web. Permite criar uma conta com dados pessoais, entrar com e-mail e senha, acessar uma página restrita a usuários logados e sair da conta.</p>
+          <span class="selo">Projeto privado</span>
+        </article>
+
+        <article class="card">
+          <img src="imagens/pjandroid.png" alt="Tela do Projeto Android">
+          <h3>Projeto Android</h3>
+          <p>Página informativa sobre a história do mascote do Android, dos primeiros conceitos (os Dandroids) até o atual Bugdroid. Feita para praticar HTML5 e CSS3, com layout responsivo e organizado.</p>
+          <a href="https://kauanfelixsilva.github.io/projeto-android/" target="_blank" rel="noopener">Ver projeto</a>
+        </article>
+
+        <article class="card">
+          <img src="imagens/pjcordel.png" alt="Tela do Projeto Cordel">
+          <h3>Projeto Cordel</h3>
+          <p>Página dedicada ao poema "Cordel Moderno", de Milton Duarte, feita para praticar HTML5 e CSS3. Usa seções com estilos diferentes, imagens de fundo e tipografia personalizada para acompanhar a leitura do poema.</p>
+          <a href="https://kauanfelixsilva.github.io/projeto-cordel/" target="_blank" rel="noopener">Ver projeto</a>
+        </article>
+
       </div>
-
-      <div class="card">
-        <img src="imagens/pjcordel.png" alt="Captura do Projeto Cordel">
-        <h3>Projeto Cordel</h3>
-        <p>Site baseado em poema de Milton Duarte.</p>
-        <a href="https://kauanfelixsilva.github.io/projeto-cordel/" target="_blank">Ver projeto</a>
-      </div>
-
     </div>
+  </section>
+
+  <section id="experiencias" class="experiencias">
+    <div class="container">
+      <h2>Experiências</h2>
+
+      <div class="linha-tempo">
+
+        <article class="experiencia">
+          <span class="experiencia-data">Atual</span>
+          <h3>Suporte Técnico e Tecnologia Educacional</h3>
+          <ul>
+            <li>Suporte técnico a usuários, diagnosticando e solucionando problemas de hardware, software e rede.</li>
+            <li>Apoio a atividades de Tecnologia Educacional com Scratch, Tinkercad, Canva e Microsoft PowerPoint.</li>
+            <li>Suporte a aulas de robótica educacional e programação com Micro:bit e LEGO Mindstorms NXT.</li>
+            <li>Criação de conteúdos educacionais digitais e suporte no uso das ferramentas do Microsoft 365.</li>
+          </ul>
+        </article>
+
+        <article class="experiencia">
+          <span class="experiencia-data">Projetos</span>
+          <h3>Desenvolvimento Web Full Stack</h3>
+          <ul>
+            <li>Desenvolvimento de sistemas em PHP e MySQL, do banco de dados à interface: agendamentos, cadastro e login, e controle financeiro.</li>
+            <li>Automação de um processo interno real: o agendamento de iPads e salas, que antes era feito manualmente pela equipe de tecnologia.</li>
+            <li>Arquitetura em camadas, regras de negócio documentadas, testes automatizados e proteção contra ataques comuns da web.</li>
+            <li>Criação de páginas responsivas com HTML5 e CSS3, publicadas no GitHub Pages e versionadas com Git.</li>
+          </ul>
+        </article>
+
+      </div>
     </div>
   </section>
 
   <section id="habilidades" class="habilidades">
     <div class="container">
-      
-  <h2>Habilidades</h2>
+      <h2>Habilidades</h2>
+      <p class="habilidades-dica">Clique em uma habilidade para ver o que eu sei fazer com ela.</p>
 
-  <ul class="lista">
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>PHP</li>
-    <li>Python</li>
-    <li>MySQL</li>
-    <li>Git e Github</li>
-    <li>Pacote Office</li>
-  </ul>
-  </div>
+      <ul class="lista">
+        <li><button type="button" data-habilidade="html">HTML</button></li>
+        <li><button type="button" data-habilidade="css">CSS</button></li>
+        <li><button type="button" data-habilidade="javascript">JavaScript</button></li>
+        <li><button type="button" data-habilidade="php">PHP</button></li>
+        <li><button type="button" data-habilidade="laravel">Laravel</button></li>
+        <li><button type="button" data-habilidade="apis">APIs</button></li>
+        <li><button type="button" data-habilidade="python">Python</button></li>
+        <li><button type="button" data-habilidade="mysql">MySQL</button></li>
+        <li><button type="button" data-habilidade="git">Git e GitHub</button></li>
+        <li><button type="button" data-habilidade="office">Pacote Office</button></li>
+      </ul>
+    </div>
   </section>
 
   <section id="certificados" class="certificados">
-  <div class="container">
-    <h2>Certificados</h2>
+    <div class="container">
+      <h2>Certificados</h2>
 
-    <div class="bloco-certificados">
+      <div class="bloco-certificados">
 
-      <div class="categoria">
-        <h3>Front-end</h3>
-        <ul>
-          <li>Curso HTML5 e CSS3 – Módulo 1 [40h]</li>
-          <li>Curso HTML5 e CSS3 – Módulo 2 [40h]</li>
-          <li>Curso HTML5 e CSS3 – Módulo 3 [40h]</li>
-        </ul>
+        <div class="categoria">
+          <h3>Front-end</h3>
+          <ul>
+            <li>Curso HTML5 e CSS3 – Módulo 1 [40h]</li>
+            <li>Curso HTML5 e CSS3 – Módulo 2 [40h]</li>
+            <li>Curso HTML5 e CSS3 – Módulo 3 [40h]</li>
+          </ul>
+        </div>
+
+        <div class="categoria">
+          <h3>Back-end</h3>
+          <ul>
+            <li>Python 3 – Mundo 1 [40h]</li>
+            <li>Python 3 – Mundo 2 [40h]</li>
+            <li>PHP Moderno – Módulo 1 [40h]</li>
+            <li>MySQL [40h]</li>
+          </ul>
+        </div>
+
+        <div class="categoria">
+          <h3>Extras</h3>
+          <ul>
+            <li>Unibes – Capacitação profissional</li>
+            <li>Pacote Office</li>
+            <li>Git e GitHub [20h]</li>
+          </ul>
+        </div>
+
       </div>
-
-      <div class="categoria">
-        <h3>Back-end</h3>
-        <ul>
-          <li>Python 3 – Mundo 1 [40h]</li>
-          <li>Python 3 – Mundo 2 [40h]</li>
-          <li>PHP Moderno – Módulo 1 [40h]</li>
-          <li>MySQL - [40h]</li>
-        </ul>
-      </div>
-
-      <div class="categoria">
-        <h3>Extras</h3>
-        <ul>
-          <li>Unibes - Capacitação profissional</li>
-          <li>Pacote office</li>
-          <li>Git e Github [20h]</li>
-        </ul>
-      </div>
-
     </div>
-  </div>
   </section>
-
 
   <section id="contatos" class="contatos">
-  <div class="container">
-  <h2><strong>Contato</strong></h2>
-  <p class="contato-frase">Aberto a oportunidades e novos projetos. Vamos conversar?</p>
+    <div class="container">
+      <h2>Contato</h2>
+      <p class="contato-frase">Aberto a oportunidades e novos projetos. Vamos conversar?</p>
 
-  <div class="social">
-    <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=kauanfelixdasilva08@gmail.com&amp;su=Contato%20pelo%20portf%C3%B3lio" target="_blank" rel="noopener">E-mail</a>
-    <a href="https://github.com/kauanfelixsilva" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/kauan-felix-da-silva-8a4546295" target="_blank">LinkedIn</a>
-  </div>
-  </div>
+      <div class="social">
+        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=kauanfelixdasilva08@gmail.com&amp;su=Contato%20pelo%20portf%C3%B3lio" target="_blank" rel="noopener">E-mail</a>
+        <a href="https://github.com/kauanfelixsilva" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/kauan-felix-da-silva-8a4546295" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
   </section>
+</main>
 
-  </main>
+<!-- Mini card das habilidades (preenchido pelo JavaScript) -->
+<dialog id="card-habilidade" class="card-habilidade">
+  <button type="button" class="fechar" aria-label="Fechar">&times;</button>
+  <h3 id="card-titulo"></h3>
+  <ul id="card-lista"></ul>
+</dialog>
 
-  <footer class="rodape">
-    <p>&copy; 2026 Kauan Felix &mdash; Desenvolvedor Full Stack</p>
-  </footer>
-  <script>
-    if (window.location.hash) {
-      history.replaceState(null, null, window.location.pathname);
-    }
-  </script>
+<button type="button" id="voltar-topo" class="voltar-topo" aria-label="Voltar ao topo">&uarr;</button>
 
-  </body>
-  </html>
+<footer class="rodape">
+  <p>Kauan Felix &mdash; Desenvolvedor Full Stack</p>
+</footer>
+</body>
+</html>
