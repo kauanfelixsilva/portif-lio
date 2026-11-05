@@ -40,6 +40,14 @@ const habilidades = {
       'Consumo de APIs com fetch e JSON'
     ]
   },
+  node: {
+    titulo: 'Node.js',
+    itens: [
+      'JavaScript no back-end',
+      'Instalação de pacotes com npm',
+      'Criação de servidores e rotas simples'
+    ]
+  },
   php: {
     titulo: 'PHP',
     itens: [
