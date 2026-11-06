@@ -149,7 +149,6 @@ html{
   object-fit: cover;
   object-position: center 30%; /* centraliza no rosto */
   border-radius: 50%;
-  border: 4px solid;
 }
 
 .sobre-texto h1{
