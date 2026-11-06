@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio | Kauan Felix</title>
 
+  <!-- Descrição para o Google e pré-visualização do link (WhatsApp, LinkedIn etc.) -->
+  <meta name="description" content="Portfólio de Kauan Felix, desenvolvedor Full Stack. Projetos em PHP, JavaScript e MySQL, experiências e contato.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://kauanfelixsilva.github.io/portif-lio/">
+  <meta property="og:title" content="Kauan Felix | Desenvolvedor Full Stack">
+  <meta property="og:description" content="Projetos em PHP, JavaScript e MySQL. Veja meu portfólio, experiências e contato.">
+  <meta property="og:image" content="https://kauanfelixsilva.github.io/portif-lio/imagens/preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Foto de Kauan Felix com o texto Desenvolvedor Full Stack">
+  <meta name="twitter:card" content="summary_large_image">
+
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +29,17 @@
 <body>
 
 <header class="header">
-  <nav class="nav">
+  <div class="header-conteudo">
+  <a href="#sobre" class="logo"><span>
+  </span></a>
+
+  <button type="button" class="menu-botao" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav class="nav" id="menu">
     <a href="#sobre">Sobre</a>
     <a href="#projetos">Projetos</a>
     <a href="#experiencias">Experiências</a>
@@ -24,6 +47,7 @@
     <a href="#certificados">Certificados</a>
     <a href="#contatos">Contato</a>
   </nav>
+  </div>
 </header>
 
 <main>
@@ -49,34 +73,48 @@
         <article class="card">
           <img src="imagens/Login.jpg" alt="Tela do Sistema Perfumaria">
           <h3>Sistema Perfumaria</h3>
+          <ul class="tecnologias"><li>PHP</li><li>JavaScript</li></ul>
           <p>Sistema comercial para uma pequena loja de perfumes, com controle financeiro e operacional. Calcula as margens de lucro com precisão, roda localmente com boa performance e se adapta a qualquer tamanho de tela.</p>
-          <span class="selo">Projeto privado</span>
+          <div class="card-rodape">
+            <span class="selo">Código privado</span>
+            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7514086268331372544/" target="_blank" rel="noopener">Ver no LinkedIn</a>
+          </div>
         </article>
 
         <article class="card">
           <img src="imagens/emprestimo.png" alt="Tela do Sistema de Agendamento de iPads">
           <h3>Sistema de Agendamento de iPads</h3>
-          <p>Sistema para agendar iPads e salas de aula no dia a dia. Antes, o professor fazia o pedido, a equipe de tecnologia conferia a disponibilidade, agendava e respondia manualmente. Agora o próprio professor faz o agendamento em um só lugar.</p>
-          <span class="selo">Projeto privado</span>
+          <ul class="tecnologias"><li>PHP</li><li>JavaScript</li></ul>
+          <p>Sistema para agendar iPads e salas de aula no dia a dia. Hoje, o professor faz o pedido e a equipe de tecnologia confere a disponibilidade, agenda e responde manualmente. Com o sistema, o próprio professor fará o agendamento em um só lugar.</p>
+          <span class="selo selo-andamento">Em desenvolvimento</span>
         </article>
 
         <article class="card">
           <img src="imagens/barbearia.png" alt="Tela do Site Barbearia">
           <h3>Site Barbearia</h3>
+          <ul class="tecnologias"><li>PHP</li><li>MySQL</li></ul>
           <p>Sistema de agendamento para barbearia, feito em PHP puro e MySQL, sem frameworks. O cliente escolhe serviço, dia, profissional e horário livre; os profissionais gerenciam a agenda por um painel. Foco em arquitetura em camadas, regras de negócio documentadas, testes automatizados e proteção contra os ataques mais comuns da web.</p>
-          <span class="selo">Projeto privado</span>
+          <div class="card-rodape">
+            <span class="selo">Código privado</span>
+            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7523036548792135680/" target="_blank" rel="noopener">Ver no LinkedIn</a>
+          </div>
         </article>
 
         <article class="card">
           <img src="imagens/formulario.png" alt="Tela do Sistema de Cadastro e Login">
           <h3>Sistema de Cadastro e Login</h3>
-          <p>Sistema de cadastro e login de usuários em PHP e MySQL, feito para praticar desenvolvimento web. Permite criar uma conta com dados pessoais, entrar com e-mail e senha, acessar uma página restrita a usuários logados e sair da conta.</p>
-          <span class="selo">Projeto privado</span>
+          <ul class="tecnologias"><li>PHP</li><li>MySQL</li></ul>
+          <p>Sistema de cadastro e login de usuários em PHP e MySQL, feito para praticar desenvolvimento web. Permite criar uma conta com dados pessoais, entrar com e-mail e senha (armazenada com hash), acessar uma página restrita a usuários logados e sair da conta.</p>
+          <div class="card-rodape">
+            <span class="selo">Código privado</span>
+            <a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7524272859863539712/" target="_blank" rel="noopener">Ver no LinkedIn</a>
+          </div>
         </article>
 
         <article class="card">
           <img src="imagens/pjandroid.png" alt="Tela do Projeto Android">
           <h3>Projeto Android</h3>
+          <ul class="tecnologias"><li>HTML</li><li>CSS</li></ul>
           <p>Página informativa sobre a história do mascote do Android, dos primeiros conceitos (os Dandroids) até o atual Bugdroid. Feita para praticar HTML5 e CSS3, com layout responsivo e organizado.</p>
           <a href="https://kauanfelixsilva.github.io/projeto-android/" target="_blank" rel="noopener">Ver projeto</a>
         </article>
@@ -84,6 +122,7 @@
         <article class="card">
           <img src="imagens/pjcordel.png" alt="Tela do Projeto Cordel">
           <h3>Projeto Cordel</h3>
+          <ul class="tecnologias"><li>HTML</li><li>CSS</li></ul>
           <p>Página dedicada ao poema "Cordel Moderno", de Milton Duarte, feita para praticar HTML5 e CSS3. Usa seções com estilos diferentes, imagens de fundo e tipografia personalizada para acompanhar a leitura do poema.</p>
           <a href="https://kauanfelixsilva.github.io/projeto-cordel/" target="_blank" rel="noopener">Ver projeto</a>
         </article>
@@ -114,7 +153,7 @@
           <h3>Desenvolvimento Web Full Stack</h3>
           <ul>
             <li>Desenvolvimento de sistemas em PHP e MySQL, do banco de dados à interface: agendamentos, cadastro e login, e controle financeiro.</li>
-            <li>Automação de um processo interno real: o agendamento de iPads e salas, que antes era feito manualmente pela equipe de tecnologia.</li>
+            <li>Desenvolvimento de um sistema para automatizar um processo interno real: o agendamento de iPads e salas, hoje feito manualmente pela equipe de tecnologia.</li>
             <li>Arquitetura em camadas, regras de negócio documentadas, testes automatizados e proteção contra ataques comuns da web.</li>
             <li>Criação de páginas responsivas com HTML5 e CSS3, publicadas no GitHub Pages e versionadas com Git.</li>
           </ul>

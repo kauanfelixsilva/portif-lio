@@ -139,13 +139,39 @@ card.addEventListener('click', (evento) => {
 // ===== Menu: rolagem suave sem colocar #ancora na URL =====
 const linksMenu = document.querySelectorAll('.nav a');
 
-linksMenu.forEach((link) => {
+document.querySelectorAll('.nav a, .logo').forEach((link) => {
   link.addEventListener('click', (evento) => {
     const destino = document.querySelector(link.getAttribute('href'));
     if (!destino) return;
     evento.preventDefault();
+    fecharMenu();
     destino.scrollIntoView({ behavior: 'smooth' });
   });
+});
+
+// ===== Menu de celular (botão ☰) =====
+const menu = document.getElementById('menu');
+const menuBotao = document.querySelector('.menu-botao');
+
+function fecharMenu() {
+  menu.classList.remove('aberto');
+  menuBotao.setAttribute('aria-expanded', 'false');
+  menuBotao.setAttribute('aria-label', 'Abrir menu');
+}
+
+menuBotao.addEventListener('click', () => {
+  const abrir = !menu.classList.contains('aberto');
+  menu.classList.toggle('aberto', abrir);
+  menuBotao.setAttribute('aria-expanded', abrir);
+  menuBotao.setAttribute('aria-label', abrir ? 'Fechar menu' : 'Abrir menu');
+});
+
+// Fecha ao clicar fora do menu ou apertar Esc
+document.addEventListener('click', (evento) => {
+  if (!evento.target.closest('.header')) fecharMenu();
+});
+document.addEventListener('keydown', (evento) => {
+  if (evento.key === 'Escape') fecharMenu();
 });
 
 // ===== Destacar no menu a seção que está na tela =====
