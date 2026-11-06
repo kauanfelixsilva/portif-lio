@@ -32,16 +32,6 @@ portifolio/
 - **Certificados** — cursos concluídos, organizados por Front-end, Back-end e Extras
 - **Contato** — e-mail, GitHub e LinkedIn
 
-## Como rodar localmente
-
-Por ser um site estático (sem build ou dependências), basta abrir o `index.html` diretamente no navegador, ou servir a pasta com um servidor simples:
-
-```bash
-python -m http.server 8000
-```
-
-Depois acesse `http://localhost:8000`.
-
 ## Autor
 
 **Kauan Felix da Silva**
