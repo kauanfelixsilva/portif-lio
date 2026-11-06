@@ -123,6 +123,7 @@ html{
   min-height:100vh;
   display:flex;
   align-items:center;
+  padding-top: 70px; /* espaço do menu fixo, para ele não cobrir a foto */
   background-image: url("imagens/pexels-filippo-bergamaschi-202684-986774.jpg");
   background-size: cover;
   background-position: top center;
