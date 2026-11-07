@@ -75,6 +75,7 @@
           <h3>Sistema Perfumaria</h3>
           <ul class="tecnologias"><li>PHP</li><li>JavaScript</li></ul>
           <p>Sistema comercial para uma pequena loja de perfumes, com controle financeiro e operacional. Calcula as margens de lucro com precisão, roda localmente com boa performance e se adapta a qualquer tamanho de tela.</p>
+          <button type="button" class="btn-detalhes" data-projeto="perfumaria">Ver detalhes</button>
           <div class="card-rodape">
             <span class="selo">Código privado</span>
             <a href="https://www.linkedin.com/feed/update/urn:li:activity:7514086268331372544/" target="_blank" rel="noopener">Ver no LinkedIn</a>
@@ -86,7 +87,10 @@
           <h3>Sistema de Agendamento de iPads</h3>
           <ul class="tecnologias"><li>PHP</li><li>JavaScript</li></ul>
           <p>Sistema para agendar iPads e salas de aula no dia a dia. Hoje, o professor faz o pedido e a equipe de tecnologia confere a disponibilidade, agenda e responde manualmente. Com o sistema, o próprio professor fará o agendamento em um só lugar.</p>
-          <span class="selo selo-andamento">Em desenvolvimento</span>
+          <button type="button" class="btn-detalhes" data-projeto="ipads">Ver detalhes</button>
+          <div class="card-rodape">
+            <span class="selo selo-andamento">Em desenvolvimento</span>
+          </div>
         </article>
 
         <article class="card">
@@ -94,6 +98,7 @@
           <h3>Site Barbearia</h3>
           <ul class="tecnologias"><li>PHP</li><li>MySQL</li></ul>
           <p>Sistema de agendamento para barbearia, feito em PHP puro e MySQL, sem frameworks. O cliente escolhe serviço, dia, profissional e horário livre; os profissionais gerenciam a agenda por um painel. Foco em arquitetura em camadas, regras de negócio documentadas, testes automatizados e proteção contra os ataques mais comuns da web.</p>
+          <button type="button" class="btn-detalhes" data-projeto="barbearia">Ver detalhes</button>
           <div class="card-rodape">
             <span class="selo">Código privado</span>
             <a href="https://www.linkedin.com/feed/update/urn:li:activity:7523036548792135680/" target="_blank" rel="noopener">Ver no LinkedIn</a>
@@ -105,6 +110,7 @@
           <h3>Sistema de Cadastro e Login</h3>
           <ul class="tecnologias"><li>PHP</li><li>MySQL</li></ul>
           <p>Sistema de cadastro e login de usuários em PHP e MySQL, feito para praticar desenvolvimento web. Permite criar uma conta com dados pessoais, entrar com e-mail e senha (armazenada com hash), acessar uma página restrita a usuários logados e sair da conta.</p>
+          <button type="button" class="btn-detalhes" data-projeto="formulario">Ver detalhes</button>
           <div class="card-rodape">
             <span class="selo">Código privado</span>
             <a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7524272859863539712/" target="_blank" rel="noopener">Ver no LinkedIn</a>
@@ -263,6 +269,7 @@
       <p class="contato-frase">Aberto a oportunidades e novos projetos. Vamos conversar?</p>
 
       <div class="social">
+        <a href="https://wa.me/5511932143220?text=Ol%C3%A1%2C%20Kauan!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">WhatsApp</a>
         <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=kauanfelixdasilva08@gmail.com&amp;su=Contato%20pelo%20portf%C3%B3lio" target="_blank" rel="noopener">E-mail</a>
         <a href="https://github.com/kauanfelixsilva" target="_blank" rel="noopener">GitHub</a>
         <a href="https://www.linkedin.com/in/kauan-felix-da-silva-8a4546295" target="_blank" rel="noopener">LinkedIn</a>
@@ -272,6 +279,25 @@
 </main>
 
 <!-- Mini card das habilidades (preenchido pelo JavaScript) -->
+<!-- Detalhes dos projetos (preenchido pelo JavaScript) -->
+<dialog id="projeto-detalhe" class="projeto-detalhe">
+  <button type="button" class="fechar" aria-label="Fechar">&times;</button>
+
+  <div class="galeria">
+    <img id="projeto-imagem" src="" alt="">
+    <button type="button" class="galeria-seta galeria-anterior" aria-label="Imagem anterior">&#8249;</button>
+    <button type="button" class="galeria-seta galeria-proxima" aria-label="Próxima imagem">&#8250;</button>
+  </div>
+  <p id="projeto-legenda" class="galeria-legenda"></p>
+  <div id="projeto-miniaturas" class="galeria-miniaturas"></div>
+
+  <div class="projeto-info">
+    <h3 id="projeto-titulo"></h3>
+    <ul id="projeto-tecnologias" class="tecnologias"></ul>
+    <div id="projeto-secoes"></div>
+  </div>
+</dialog>
+
 <dialog id="card-habilidade" class="card-habilidade">
   <button type="button" class="fechar" aria-label="Fechar">&times;</button>
   <h3 id="card-titulo"></h3>

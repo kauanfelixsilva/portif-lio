@@ -262,3 +262,232 @@ document.querySelectorAll('.progresso').forEach((progresso) => {
 
   observador.observe(progresso);
 });
+
+// ===== Detalhes dos projetos =====
+// Para adicionar outro projeto: crie uma entrada aqui e coloque
+// <button class="btn-detalhes" data-projeto="nome"> no card dele.
+const projetos = {
+  formulario: {
+    titulo: 'Sistema de Cadastro e Login',
+    tecnologias: ['PHP', 'MySQL'],
+    imagens: [
+      { src: 'imagens/formulario.png', legenda: 'Tela de login' },
+      { src: 'imagens/formulario-cadastro.png', legenda: 'Formulário de cadastro com os dados pessoais' },
+      { src: 'imagens/formulario-restrita.png', legenda: 'Página restrita, que só aparece depois do login' }
+    ],
+    secoes: [
+      {
+        titulo: 'O objetivo',
+        texto: 'Praticar desenvolvimento web com PHP construindo a base de quase todo sistema: criar conta, entrar e proteger páginas que só usuários logados podem ver.'
+      },
+      {
+        titulo: 'Como funciona',
+        itens: [
+          'O usuário se cadastra com nome, e-mail, senha, data de nascimento, telefone, sexo, CPF e cidade.',
+          'A senha é guardada no banco com hash, nunca em texto puro.',
+          'O login é feito com e-mail e senha.',
+          'Depois de entrar, o usuário vê uma página restrita com o nome dele e pode sair da conta.'
+        ]
+      },
+      {
+        titulo: 'O que eu aprendi',
+        itens: [
+          'Ligar o PHP ao banco de dados MySQL para salvar e buscar usuários.',
+          'Guardar senhas com segurança usando hash.',
+          'Usar sessões para controlar quem está logado e bloquear o acesso de quem não está.'
+        ]
+      }
+    ]
+  },
+  ipads: {
+    titulo: 'Sistema de Agendamento de iPads',
+    tecnologias: ['PHP', 'JavaScript'],
+    imagens: [
+      { src: 'imagens/emprestimo.png', legenda: 'Tela inicial do sistema' },
+      { src: 'imagens/ipads-professor.png', legenda: 'Área do professor: nova reserva, calendário e minhas reservas' },
+      { src: 'imagens/ipads-calendario.png', legenda: 'Calendário da equipe de tecnologia, com as reservas da semana por aula e local' }
+    ],
+    secoes: [
+      {
+        titulo: 'O objetivo',
+        texto: 'Hoje o professor pede os iPads ou uma sala, e a equipe de tecnologia confere a disponibilidade, agenda e responde, tudo manualmente. O sistema vai deixar o próprio professor ver os horários livres e fazer a reserva, enquanto a equipe só acompanha e aprova.'
+      },
+      {
+        titulo: 'Como funciona',
+        itens: [
+          'O professor reserva iPads, o Laboratório ou o Espaço Maker para uma aula.',
+          'Ele vê os horários livres da semana e acompanha ou cancela as próprias reservas.',
+          'A equipe de tecnologia vê um calendário semanal com todas as reservas, separadas por aula e por local, e pode imprimir.',
+          'Reservas novas ficam em análise até a equipe responder.',
+          'Há áreas para gerenciar espaços, iPads, usuários e o histórico de reservas.'
+        ]
+      },
+      {
+        titulo: 'O que estou aprendendo',
+        itens: [
+          'Criar um sistema com dois tipos de usuário, cada um vendo telas e permissões diferentes.',
+          'Evitar reservas em conflito no mesmo horário e local.',
+          'Levantar requisitos com quem vai usar o sistema no dia a dia.'
+        ]
+      }
+    ]
+  },
+  perfumaria: {
+    titulo: 'Sistema Perfumaria',
+    tecnologias: ['PHP', 'JavaScript'],
+    imagens: [
+      { src: 'imagens/Login.jpg', legenda: 'Tela de login' },
+      { src: 'imagens/perfumaria-clientes.png', legenda: 'Cadastro de clientes, com busca por nome ou telefone (nomes borrados para proteger os clientes)' },
+      { src: 'imagens/perfumaria-pagamentos.png', legenda: 'Controle de pagamentos: quanto cada venda já recebeu e quanto falta (nomes borrados)' }
+    ],
+    secoes: [
+      {
+        titulo: 'O objetivo',
+        texto: 'Substituir as anotações de uma pequena loja de perfumes por um sistema que organiza vendas, clientes e pagamentos em um só lugar. O sistema é usado no dia a dia da loja.'
+      },
+      {
+        titulo: 'Como funciona',
+        itens: [
+          'Cadastro de clientes e perfumes, com busca por nome ou telefone.',
+          'Registro de vendas, ligando cada venda ao cliente e aos perfumes vendidos.',
+          'Controle de pagamentos: mostra o total, o valor pago e o que ainda falta receber, com filtro das vendas com saldo em aberto.',
+          'Cálculo das margens de lucro de cada produto.'
+        ]
+      },
+      {
+        titulo: 'O que eu aprendi',
+        itens: [
+          'Modelar dados de um negócio real: clientes, produtos, vendas e pagamentos.',
+          'Lidar com valores em dinheiro sem erros de arredondamento.',
+          'Criar telas simples para quem não é da área de tecnologia usar todo dia.'
+        ]
+      }
+    ]
+  },
+  barbearia: {
+    titulo: 'Site Barbearia',
+    tecnologias: ['PHP', 'MySQL'],
+    imagens: [
+      { src: 'imagens/barbearia.png', legenda: 'Página inicial da barbearia' },
+      { src: 'imagens/barbearia-servicos.png', legenda: 'Escolha dos serviços, com preço e duração de cada um' },
+      { src: 'imagens/barbearia-agenda.png', legenda: 'Painel do profissional com a agenda da semana' }
+    ],
+    secoes: [
+      {
+        titulo: 'O objetivo',
+        texto: 'Construir um sistema de agendamento completo, como os que barbearias usam de verdade, em PHP puro e sem frameworks. A ideia era entender cada parte de um sistema web, do banco de dados à tela.'
+      },
+      {
+        titulo: 'Como funciona',
+        itens: [
+          'O cliente marca um ou mais serviços e já vê o preço e o tempo de cada um.',
+          'Depois escolhe o dia, o profissional e um horário livre.',
+          'Cada profissional vê a agenda da semana, com os agendamentos e o horário de almoço bloqueado.',
+          'Pelo painel dá para gerenciar serviços, profissionais, avaliações e horário de funcionamento.'
+        ]
+      },
+      {
+        titulo: 'O que eu aprendi',
+        itens: [
+          'Arquitetura em camadas, separando regras de negócio, acesso ao banco e telas.',
+          'Documentar regras de negócio e escrever testes automatizados.',
+          'Proteger o sistema contra os ataques mais comuns da web.'
+        ]
+      }
+    ]
+  }
+};
+
+const janelaProjeto = document.getElementById('projeto-detalhe');
+const projetoImagem = document.getElementById('projeto-imagem');
+const projetoLegenda = document.getElementById('projeto-legenda');
+const projetoMiniaturas = document.getElementById('projeto-miniaturas');
+let projetoAtual = null;
+let imagemAtual = 0;
+
+function mostrarImagem(indice) {
+  const imagens = projetoAtual.imagens;
+  imagemAtual = (indice + imagens.length) % imagens.length; // dá a volta no fim e no começo
+  projetoImagem.src = imagens[imagemAtual].src;
+  projetoImagem.alt = imagens[imagemAtual].legenda;
+  projetoLegenda.textContent = imagens[imagemAtual].legenda;
+  projetoMiniaturas.querySelectorAll('button').forEach((botao, i) => {
+    botao.classList.toggle('ativa', i === imagemAtual);
+  });
+}
+
+function abrirProjeto(nome) {
+  projetoAtual = projetos[nome];
+  if (!projetoAtual) return;
+
+  document.getElementById('projeto-titulo').textContent = projetoAtual.titulo;
+
+  const tecnologias = document.getElementById('projeto-tecnologias');
+  tecnologias.innerHTML = '';
+  projetoAtual.tecnologias.forEach((nomeTec) => {
+    const li = document.createElement('li');
+    li.textContent = nomeTec;
+    tecnologias.appendChild(li);
+  });
+
+  // Miniaturas embaixo da imagem principal
+  projetoMiniaturas.innerHTML = '';
+  projetoAtual.imagens.forEach((imagem, i) => {
+    const botao = document.createElement('button');
+    botao.type = 'button';
+    botao.setAttribute('aria-label', imagem.legenda);
+    const mini = document.createElement('img');
+    mini.src = imagem.src;
+    mini.alt = '';
+    botao.appendChild(mini);
+    botao.addEventListener('click', () => mostrarImagem(i));
+    projetoMiniaturas.appendChild(botao);
+  });
+
+  // Textos: cada seção tem um parágrafo ou uma lista
+  const secoes = document.getElementById('projeto-secoes');
+  secoes.innerHTML = '';
+  projetoAtual.secoes.forEach((secao) => {
+    const titulo = document.createElement('h4');
+    titulo.textContent = secao.titulo;
+    secoes.appendChild(titulo);
+
+    if (secao.texto) {
+      const p = document.createElement('p');
+      p.textContent = secao.texto;
+      secoes.appendChild(p);
+    }
+    if (secao.itens) {
+      const ul = document.createElement('ul');
+      secao.itens.forEach((texto) => {
+        const li = document.createElement('li');
+        li.textContent = texto;
+        ul.appendChild(li);
+      });
+      secoes.appendChild(ul);
+    }
+  });
+
+  mostrarImagem(0);
+  janelaProjeto.showModal();
+  janelaProjeto.scrollTop = 0;
+}
+
+document.querySelectorAll('[data-projeto]').forEach((botao) => {
+  botao.addEventListener('click', () => abrirProjeto(botao.dataset.projeto));
+});
+
+janelaProjeto.querySelector('.galeria-anterior').addEventListener('click', () => mostrarImagem(imagemAtual - 1));
+janelaProjeto.querySelector('.galeria-proxima').addEventListener('click', () => mostrarImagem(imagemAtual + 1));
+janelaProjeto.querySelector('.fechar').addEventListener('click', () => janelaProjeto.close());
+
+// Fecha clicando fora da janela
+janelaProjeto.addEventListener('click', (evento) => {
+  if (evento.target === janelaProjeto) janelaProjeto.close();
+});
+
+// Setas do teclado trocam a imagem
+janelaProjeto.addEventListener('keydown', (evento) => {
+  if (evento.key === 'ArrowLeft') mostrarImagem(imagemAtual - 1);
+  if (evento.key === 'ArrowRight') mostrarImagem(imagemAtual + 1);
+});
