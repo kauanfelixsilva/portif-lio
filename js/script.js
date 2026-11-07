@@ -206,7 +206,7 @@ botaoTopo.addEventListener('click', () => {
 
 // ===== Elementos aparecem suavemente ao rolar =====
 const animados = document.querySelectorAll(
-  '.sobre-container, .card, .experiencia, .lista li, .categoria, .social'
+  '.sobre-container, .card, .experiencia, .formacao-card, .lista li, .categoria, .social'
 );
 
 const observadorAnimacao = new IntersectionObserver((entradas, observador) => {
@@ -226,4 +226,39 @@ animados.forEach((elemento, i) => {
   // Pequeno atraso em sequência para itens do mesmo grupo
   elemento.style.transitionDelay = (i % 3) * 0.1 + 's';
   observadorAnimacao.observe(elemento);
+});
+
+// ===== Barra de progresso do curso =====
+// Calcula a porcentagem pelo tempo entre o início e o fim do curso,
+// então ela se atualiza sozinha com o passar dos meses.
+document.querySelectorAll('.progresso').forEach((progresso) => {
+  let porcentagem = 100;
+
+  if (progresso.dataset.inicio) {
+    const inicio = new Date(progresso.dataset.inicio);
+    const fim = new Date(progresso.dataset.fim);
+    const conta = (Date.now() - inicio) / (fim - inicio) * 100;
+    porcentagem = Math.round(Math.min(100, Math.max(0, conta)));
+  }
+
+  const preenchido = progresso.querySelector('.progresso-preenchido');
+  const valor = progresso.querySelector('.progresso-valor');
+
+  // Só anima quando a barra aparece na tela
+  const observador = new IntersectionObserver((entradas) => {
+    if (!entradas[0].isIntersecting) return;
+    observador.disconnect();
+    preenchido.style.width = porcentagem + '%';
+
+    // Número subindo junto com a barra
+    let atual = 0;
+    const passo = Math.max(1, Math.ceil(porcentagem / 50));
+    const contador = setInterval(() => {
+      atual = Math.min(porcentagem, atual + passo);
+      valor.textContent = atual + '%';
+      if (atual >= porcentagem) clearInterval(contador);
+    }, 30);
+  }, { threshold: 0.5 });
+
+  observador.observe(progresso);
 });
